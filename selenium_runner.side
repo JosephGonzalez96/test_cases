@@ -1,0 +1,68 @@
+{
+  "id": "1a432196-020d-428e-b169-2012fa713c7b",
+  "version": "2.0",
+  "name": "selenium_runner",
+  "url": "https://www.youtube.com",
+  "tests": [{
+    "id": "c5a10d31-5d74-41ee-964d-f351fd16375c",
+    "name": "test 1",
+    "commands": [{
+      "id": "b75dd443-2a78-4c46-b048-f74065652369",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "425cb247-91e4-4e46-8746-552ae0c3d0b9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//*[@aria-labelledby=\"cb-header\"]//*[name()=\"ytd-button-renderer\"])[3]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d83b40b5-0117-41bd-9c61-5fc89c323e70",
+      "comment": "",
+      "command": "type",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jenkins"
+    }, {
+      "id": "8102ec6b-de2f-425e-a05f-e834aee3552a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6a3c9273-e081-423a-94cb-ebb137e59180",
+      "comment": "",
+      "command": "echo",
+      "target": "Test sucessed ",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "457f5ecc-0fc5-4dfd-ae09-3adce2a2f77c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c5a10d31-5d74-41ee-964d-f351fd16375c"]
+  }],
+  "urls": ["https://www.youtube.com/"],
+  "plugins": []
+}
