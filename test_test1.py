@@ -3,8 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
 
-
-browser = webdriver.Firefox()
+browser = webdriver.Chrome()
 
 browser.get('https://www.youtube.com/')
 
